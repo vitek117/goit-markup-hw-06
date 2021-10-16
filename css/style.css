@@ -254,14 +254,12 @@ img {
 }
 .work-list {
   display: flex;
-  
 }
-.work-item{
-position: relative;
+.work-item {
+  position: relative;
 }
 .work-item:not(:last-child) {
   margin-right: 30px;
-  
 }
 .work-text {
   width: 100%;
@@ -627,8 +625,6 @@ position: relative;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop-close-btn {
-
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -650,7 +646,6 @@ position: relative;
 .backdrop-icon:hover,
 .backdrop-icon:focus {
   fill: var(--accent-color);
-
 }
 
 /* ------------footer-form-------------*/
@@ -683,7 +678,6 @@ position: relative;
   line-height: 1.25;
   align-items: center;
   color: rgba(255, 255, 255, 0.6);
- 
 }
 .footer-form-btn {
   margin-left: 12px;
@@ -740,6 +734,9 @@ position: relative;
   padding-right: 20px;
   outline: none;
 }
+.modal-text-input {
+  margin-bottom: 0px;
+}
 .modal-text-input:focus,
 .modal-input:focus {
   border-color: var(--accent-color);
@@ -755,7 +752,8 @@ position: relative;
   position: absolute;
   left: 10px;
   fill: var(--dark-text-color);
-  /* -------почему не по центру?? ???-- */
+  top: 50%;
+  transform: translateY(-50%);
 }
 .modal-text-input {
   width: 100%;
@@ -795,8 +793,7 @@ position: relative;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 4px;
-  margin-right: 8 px;
-  /*почему не удается сделать отступ !! */
+  margin-right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -811,16 +808,18 @@ position: relative;
 
 .checkbox-licens {
   color: var(--accent-color);
+  margin-left: 4px;
 }
 
 .modal-btn {
   width: 200px;
   display: block;
   margin: 0 auto;
+  letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .modal-btn:hover,
-.modal-btn:focus{
-  background-color: #188CE8;
+.modal-btn:focus {
+  background-color: #188ce8;
   color: #ffffff;
 }
